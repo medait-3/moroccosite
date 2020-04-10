@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/pretty-checkbox.min.css">
+    <link rel="stylesheet" href="css/datatables.min.css">
+    <link rel="stylesheet" href="css/flag-icon.min.css">
+    <link rel="stylesheet" href="css/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" href="css/apexcharts.css">
+
+    <link rel="stylesheet" href="css/mian.css">
+    <title>CORONA</title>
+</head>
+
+<body style="background-color: black">
+    <div class="clearfix">
+        
+        <main>
+            <section>
+                <div class="container mt-3">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h2 class="text-center bg-dark text-white border-10 py-2">MOROCCO</h2>
+                            <div class="row">
+
+                                <div class="col-md-6 my-2 ipad" >
+
+                                    <div class="p-3 box-shadow border-5" style="background-color: #007bff">
+                                        <div class="row" >
+                                            <div class="col-4" >
+                                                <span >
+                                                    <i class="fas fa-users text-white fa-2x pt-3 d-inline-block"></i>
+                                                </span>
+                                            </div>
+                                            <div class="col-8 text-white">
+                                                <div>Confirmed</div>
+
+                                                <h4 id="confirmed-eg">0
+                                                </h4>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="col-md-6 my-2 ipad">
+
+                                    <div class="p-3 box-shadow border-5" style="background-color:#20c997">
+                                        <div class="row">
+                                            <div class="col-4">
+                                                <span >
+                                                    <i class="fas fa-chart-pie  text-white fa-2x pt-3 d-inline-block"></i>
+                                                </span>
+                                            </div>
+                                            <div class="col-8 text-white">
+                                                <div>Deaths</div>
+                                                <h4 id="deathseg-eg">0
+                                                </h4>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="col-md-6 my-2 ipad">
+
+                                    <div class="p-3 box-shadow border-5" style="background-color: #ffc107">
+                                        <div class="row">
+                                            <div class="col-4">
+                                                <span >
+                                                    <i class="fa-2x text-white fas fa-procedures pt-3 d-inline-block"></i> </span>
+                                            </div>
+                                            <div class="col-8 text-white">
+                                                <div>Recovered</div>
+
+                                                <h4 id="recovered-eg">0
+                                                </h4>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class=" col-md-12 my-2">
+
+                                    <div class="bg-white p-3 box-shadow border-5">
+                                        <div id="chart">
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <h2 class="text-center bg-dark text-white border-10 py-2">WORLD</h2>
+                            <div class="row">
+
+                                <div class="col-md-6 my-2 ipad">
+
+                                    <div class="p-3 box-shadow border-5" style="background-color: #007bff">
+                                        <div class="row">
+                                            <div class="col-4">
+                                                <span >
+                                                    <i class="fa-2x text-white fas fa-users pt-3 d-inline-block"></i>
+                                                </span>
+                                            </div>
+                                            <div class="col-8 text-white">
+                                                <div>Confirmed</div>
+
+                                                <h4 id="confirmed">0
+                                                </h4>
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="col-md-6 my-2 ipad">
+
+                                    <div class="p-3 box-shadow border-5" style="background-color: #20c997">
+                                        <div class="row">
+                                            <div class="col-4">
+                                                <span >
+                                                    <i class="text-white fa-2x fas fa-chart-pie pt-3 d-inline-block"></i>
+                                                </span>
+                                            </div>
+                                            <div class="col-8 text-white">
+                                                <div>Deaths</div>
+                                                <h4 id="deaths">0
+                                                </h4>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="col-md-6 my-2 ipad">
+
+                                    <div class=" p-3 box-shadow border-5" style="background-color: #ffc107">
+                                        <div class="row">
+                                            <div class="col-4">
+                                                <span >
+                                                    <i class="fa-2x text-white fas fa-procedures pt-3 d-inline-block"></i> </span>
+                                            </div>
+                                            <div class="col-8 text-white">
+                                                <div>Recovered</div>
+
+
+                                                <h4 id="recovered">0
+                                                </h4>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="col-md-12 my-2">
+
+                                    <div class="bg-white p-3 box-shadow border-5">
+                                        <div id="chart2">
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class=" my-5 ">
+                <div class="container ">
+
+                    <div class="row">
+                        <div class="col-md-12  border-10 ">
+                            <section id="external" class="">
+                                <h3 class="p-3 bg-dark text-white text-center border-10 titel-top my-3">All WORLD</h3>
+
+                                <section class="bg-dark border-10 p-2">
+                                    <div class="row  mt-3 ">
+                                        <div class="col-md-12 ">
+                                            <table id="example"
+                                                class="all-table table table-striped table-bordered bg-white">
+                                                <thead class="py-2">
+                                                    <tr class="py-2">
+                                                        <th class="text-center bg-dark text-white">country</th>
+                                                        <th class="text-center bg-dark text-white">country</th>
+                                                        <th class="text-center bg-dark text-white">Recovered</th>
+                                                        <th class="text-center bg-dark text-white">deaths</th>
+                                                        <th class="text-center bg-dark text-white">cases</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody id="showData" class="">
+
+
+
+
+
+                                                </tbody>
+
+                                            </table>
+
+                                        </div>
+                                    </div>
+                                </section>
+
+
+                            </section>
+                        </div>
+
+                    </div>
+
+                </div>
+            </section>
+            <section>
+          
+                <div class="world-map"></div>
+        
+
+            </section>
+        </main>
+    </div>
+
+
+    <script src="js/jquery-3-4-1-min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/apexcharts.min.js"></script>
+    <script src="js/datatables.min.js"></script>
+    <script src="js/table.js"></script>
+    <script src="js/jquery.peity.min.js"></script>
+    <script src="js/dataeg.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/alldata.js"></script>
+    <script src="js/loader.js"></script>
+    <script src="js/new.js"></script>
+</body>
+
+</html>
+
+</html>
